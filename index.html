@@ -106,7 +106,7 @@
                               'Authorization': 'Bearer ' + access_token
                             },
                             success: function(response) {
-                              loggedInPlaceholder.innerHTML = loggedUbTenokate(response);
+                              loggedInPlaceholder.innerHTML = loggedInTemplate(response);
 
                               $('#login').hide();
                               $('#loggedin').show();
