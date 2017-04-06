@@ -12,7 +12,7 @@ table, caption, tbody, tfoot,
 thead, tr, th, td, article, aside, canvas,
 details, embed, figure, figcaption, footer,
 header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video 
+section, summary, time, mark, audio, video
     {
     margin: 0;
     padding: 0;
@@ -22,30 +22,30 @@ section, summary, time, mark, audio, video
     vertical-align: baseline;
     }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section 
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
     {
     display: block;
     }
 
 ol,
-ul 
+ul
     {
     list-style: none;
     }
 
-blockquote, q 
+blockquote, q
     {
     quotes: none;
     }
 
 blockquote:before, blockquote:after,
-q:before, q:after 
+q:before, q:after
     {
     content: '';
     content: none;
     }
 
-table 
+table
     {
     border-collapse: collapse;
     border-spacing: 0;
@@ -53,7 +53,7 @@ table
 
 *,
 *:before,
-*:after 
+*:after
     {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -63,8 +63,8 @@ table
 
 
 /* ** Headings ** */
-h1, h2, h3, h4, h5, h6 
-    {	
+h1, h2, h3, h4, h5, h6
+    {
     color: #dee8fy;
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
@@ -73,54 +73,54 @@ h1, h2, h3, h4, h5, h6
     text-align:center;
     }
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a 
-    { 
-    font-weight: inherit; 
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+    {
+    font-weight: inherit;
     }
 
-h1 
-    { 
-    font-size: 38px; 
-    line-height: 1.2; 
+h1
+    {
+    font-size: 38px;
+    line-height: 1.2;
     }
 
-h2 
-    { 
-    font-size: 34px; 
-    line-height: 1.2; 
+h2
+    {
+    font-size: 34px;
+    line-height: 1.2;
     }
 
-h3 
-    { 
-    font-size: 28px; 
-    line-height: 1.2; 
+h3
+    {
+    font-size: 28px;
+    line-height: 1.2;
     }
 
-h4 
-    { 
-    font-size: 18px; 
-    line-height: 1.3; 
+h4
+    {
+    font-size: 18px;
+    line-height: 1.3;
     }
 
-h5 
-    { 
-    font-size: 17px; 
-    line-height: 1.4; 
+h5
+    {
+    font-size: 17px;
+    line-height: 1.4;
     }
 
-h6 
-    { 
-    font-size: 14px; 
-    line-height: 1.5; 
+h6
+    {
+    font-size: 14px;
+    line-height: 1.5;
     text-transform: uppercase;
     }
 
-h1, h2, h3 
+h1, h2, h3
     {
     margin-bottom: 20px;
     }
 
-.subheader 
+.subheader
     {
     color: #aaa;
     }
@@ -128,18 +128,18 @@ h1, h2, h3
 
 
 /* ** Typography ** */
-p 
+p
     {
     margin: 0 20px 0 20px;
     text-align:center;
     }
 
-p img 
+p img
     {
     margin: 0;
     }
 
-p.lead 
+p.lead
     {
     font-size: 21px;
     line-height: 27px;
@@ -156,7 +156,7 @@ body
     background-color: #2a333c;
     }
 
-#header 
+#header
     {
     top: 0;
     left: 0;
@@ -169,85 +169,99 @@ body
     }
 
 
+#bkgrd_dk_z {
+  left: 0px;
+  top: 0px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 345px;
+  min-height: 135px;
+  border-radius: 10px;
+  background-color: #4e647a;
+  border: 1px solid #4e647e;
+}
 
-#bkgrd_dk_a 
+#bkgrd_dk_a
 
-    { 
-	 
-    left: 0px; 
-	 
-    top: 0px; 
-	 
-    position: relative; 
+    {
 
-    margin-left: auto; 
-	 
+    left: 0px;
+
+    top: 0px;
+
+    position: relative;
+
+    margin-left: auto;
+
     margin-right: auto;
     margin-top: 10px;
-    margin-bottom: 10px; 
-	 
+    margin-bottom: 10px;
+
     width: 345px;
-	 
+
     min-height: 135px;
-    border-radius: 10px; 
-	 
+    border-radius: 10px;
+
     background-color: #4e647a;
     border: 1px solid #4e647e;
     }
 
-#bkgrd_dk_b 
+#bkgrd_dk_b
 
-    { 
-	 
-    left: 0px; 
-	 
-    top: 0px; 
-	 
-    position: relative; 
+    {
 
-    margin-left: auto; 
-	 
+    left: 0px;
+
+    top: 0px;
+
+    position: relative;
+
+    margin-left: auto;
+
     margin-right: auto;
     margin-top: 10px;
-    margin-bottom: 10px; 
-	 
+    margin-bottom: 10px;
+
     width: 345px;
-	 
+
     min-height: 485px;
-    border-radius: 10px; 
-	 
+    border-radius: 10px;
+
     background-color: #4e647a;
     border: 1px solid #4e647e;
     }
 
-#bkgrd_dk_c 
+#bkgrd_dk_c
 
-    { 
-	 
-    left: 0px; 
-	 
-    top: 0px; 
-	 
-    position: relative; 
+    {
 
-    margin-left: auto; 
-	 
+    left: 0px;
+
+    top: 0px;
+
+    position: relative;
+
+    margin-left: auto;
+
     margin-right: auto;
     margin-top: 10px;
-    margin-bottom: 10px; 
-	 
+    margin-bottom: 10px;
+
     width: 345px;
-	 
+
     min-height: 515px;
-    border-radius: 10px; 
-	 
+    border-radius: 10px;
+
     background-color: #4e647a;
     border: 1px solid #4e647e;
     }
 
 .btn
     {
-    float: left;	 
+    float: left;
     margin: 10px;
     width: 150px;
     height: 65px;
@@ -258,7 +272,7 @@ body
 
 .btn_offset
     {
-    float: left;	 
+    float: left;
     margin: 10px;
     width: 150px;
     height: 65px;
@@ -269,7 +283,7 @@ body
 
 .btn_sq
     {
-    float: left;	 
+    float: left;
     margin: 10px;
     width: 150px;
     height: 150px;
@@ -280,7 +294,7 @@ body
 
 .btn_sq_offset
     {
-    float: left;	 
+    float: left;
     margin: 10px;
     width: 150px;
     height: 150px;
@@ -291,7 +305,7 @@ body
 
 .btn_rctgl
     {
-    float: left;	 
+    float: left;
     margin: 10px;
     width: 325px;
     height: 150px;
@@ -314,7 +328,7 @@ body
 }
 
 
-.search 
+.search
     {
 
     position: relative;
@@ -327,36 +341,36 @@ body
 
 
 
-input.search-box 
+input.search-box
     {
-    
+
     margin-bottom: 20px;
-    
+
 }
 
 
 
-.search-btn 
+.search-btn
     {
-    
+
     background: #4e647a;
-    
+
     border: none;
-    
+
     box-shadow: none;
-    
+
     margin: 0;
-    
+
     position: absolute;
-    
+
     padding: 0;
-    
+
     padding: 8px 12px 9px;
-    
+
     right: 0;
-    
+
     border-radius: 0;
-    
+
 }
 
 .button, button, input[type='submit'], input[type='reset'], input[type='button']
