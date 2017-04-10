@@ -98,7 +98,7 @@
                     if (access_token && (state == null || state !== storedState)) {
                       alert('There was an error during the authentication');
                     } else {
-                      localStorage.removeItem(stateKey);
+                      //localStorage.removeItem(stateKey);
                       if (access_token) {
                         $.ajax({
                             url: 'https://api.spotify.com/v1/me',
