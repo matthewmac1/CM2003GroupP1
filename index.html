@@ -46,7 +46,6 @@
                   <button id="login-button" class="btn">Log in with Spotify</button>
                 </div>
                 <div id="loggedin">
-                  <button id="top-tracks-button" class="btn">TOP TRACKS</button>
                 </div>
 
                 <script id="loggedin-template" type="text/x-handlebars-template">
@@ -116,6 +115,18 @@
 
                               $('#login').hide();
                               $('#loggedin').show();
+
+                              document.getElementById('top-tracks-button').addEventListener('click', function() {
+                                $.ajax({
+                                    url: 'https://api.spotify.com/v1/me/top/tracks',
+                                    headers: {
+                                      'Authorization': 'Bearer ' + access_token
+                                    },
+                                    success: function(response) {
+                                      document.getElementById('content').innetHTML.write(response);
+                                    }
+                                });
+                              }, false);
                             }
                           });
                         } else {
@@ -141,17 +152,7 @@
 
                           window.location = url;
                         }, false);
-                        document.getElementById('top-tracks-button').addEventListener('click', function() {
-                          $.ajax({
-                              url: 'https://api.spotify.com/v1/me/top/tracks',
-                              headers: {
-                                'Authorization': 'Bearer ' + access_token
-                              },
-                              success: function(response) {
-                                document.getElementById('content').innetHTML.write(response);
-                              }
-                          });
-                        }, false);
+
                       }
 
                 })();
