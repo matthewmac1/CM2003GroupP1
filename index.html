@@ -34,8 +34,14 @@
     <body>
 
       <div id="content">
-
       </div>
+
+      <script id="loggedin-template" type="text/x-handlebars-template">
+        <button id="top-tracks-button" class="btn">SAVED TRACKS</button>
+        <img width="100" src="{{images.0.url}}" />
+        <h1>{{display_name}}</h1>
+      </script>
+
 
         <header id="header">
 
@@ -118,12 +124,12 @@
 
                               document.getElementById('top-tracks-button').addEventListener('click', function() {
                                 $.ajax({
-                                    url: 'https://api.spotify.com/v1/browse/featured-playlists',
+                                    url: 'https://api.spotify.com/v1/me/tracks',
                                     headers: {
                                       'Authorization': 'Bearer ' + access_token
                                     },
                                     success: function(response) {
-                                      document.getElementById('content').innerHTML = response;
+                                      print(response);
                                     }
                                 });
                               }, false);
