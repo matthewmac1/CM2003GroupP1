@@ -124,7 +124,7 @@
 
                               document.getElementById('top-tracks-button').addEventListener('click', function() {
                                 $.ajax({
-                                    url: 'https://api.spotify.com/v1/me/tracks',
+                                    url: 'https://api.spotify.com/v1/me/top/tracks',
                                     headers: {
                                       'Authorization': 'Bearer ' + access_token
                                     },
@@ -147,7 +147,7 @@
                           var state = generateRandomString(16);
 
                           localStorage.setItem(stateKey, state);
-                          var scope = 'user-read-private user-read-email';
+                          var scope = 'user-read-private user-read-email user-top-read';
 
                           var url = 'https://accounts.spotify.com/authorize';
                           url += '?response_type=token';
