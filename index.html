@@ -118,7 +118,7 @@
 
                               document.getElementById('top-tracks-button').addEventListener('click', function() {
                                 $.ajax({
-                                    url: 'https://api.spotify.com/v1/me',
+                                    url: 'https://api.spotify.com/v1/browse/featured-playlists',
                                     headers: {
                                       'Authorization': 'Bearer ' + access_token
                                     },
