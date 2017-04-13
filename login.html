@@ -38,7 +38,7 @@
             'Authorization' : 'Bearer ' + localStorage.getItem('access_token')
           },
           success: function() {
-            window.location = 'http://spotinfinity.azurewebsites.net/index.html';
+            window.location = 'http://spotinfinity.azurewebsites.net/';
           },
           error: function() {
             localStorage.clear();
@@ -48,7 +48,7 @@
         });
       } else if(localStorage.getItem(stateKey) == getHashParams().state && getHashParams().state) {
         localStorage.setItem('access_token', getHashParams().access_token);
-        window.location = 'http://spotinfinity.azurewebsites.net/index.html';
+        window.location = 'http://spotinfinity.azurewebsites.net/';
       } else {
         $('#loading').hide();
         $('#login-button').show();
