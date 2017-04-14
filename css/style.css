@@ -65,6 +65,7 @@ table
 /* ** Headings ** */
 h1, h2, h3, h4, h5, h6 
     {	
+    margin: 0;
     color: #dee8fy;
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
@@ -150,6 +151,7 @@ img
     border-radius: 50%;   
     position: center;
     padding: center;
+    margin: 0;
     }
 
 body
@@ -197,6 +199,10 @@ body
 	 
     background-color: #4e647a;
     border: 1px solid #4e647e;
+	    
+    display: flex;
+    align-items: center;
+    justify-content: center;
     }
 
 #bkgrd_dk_b 
@@ -395,6 +401,6 @@ input.search-box
     transition: .5s;
     text-transform: uppercase;
     text-align:left;
-    margin: 20px;
+    margin: 0;
     
     }
