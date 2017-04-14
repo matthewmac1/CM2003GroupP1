@@ -377,7 +377,7 @@ input.search-box
     {
     border: none;
     display: inline-block;
-    test-decoration: none;
+    text-decoration: none;
     font-size: 14px;
     font-weight; 300;
     font-family: inherit;
