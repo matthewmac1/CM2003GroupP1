@@ -148,8 +148,8 @@ p.lead
 img
     {
     border-radius: 50%;   
-    position: auto;
-    padding: auto;
+    position: center;
+    padding: center;
     }
 
 body
