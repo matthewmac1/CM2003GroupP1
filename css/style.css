@@ -147,7 +147,9 @@ p.lead
 
 img
     {
-	border-radius: 50%;    
+    border-radius: 50%;   
+    position: auto;
+    padding: auto;
     }
 
 body
