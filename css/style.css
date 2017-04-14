@@ -11,6 +11,7 @@ ul, li, fieldset, form, label, legend,
 table, caption, tbody, tfoot,
 thead, tr, th, td, article, aside, canvas,
 details, embed, figure, figcaption, footer,
+main,
 header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video 
     {
@@ -22,7 +23,7 @@ section, summary, time, mark, audio, video
     vertical-align: baseline;
     }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section 
+article, aside, details, figcaption, figure, footer, main, header, hgroup, menu, nav, section 
     {
     display: block;
     }
@@ -329,6 +330,11 @@ body
     justify-content: center;
     }
 
+#main{
+    top: 0;
+    left: 365;
+    width: 1555px;
+}
 
 #footer {
     bottom: 0;
