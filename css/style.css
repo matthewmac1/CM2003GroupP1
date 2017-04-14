@@ -130,7 +130,11 @@ h1, h2, h3
 /* ** Typography ** */
 p 
     {
-    margin: 20px 20px 0 20px;
+    margin: 0;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
     text-align:center;
     }
 
