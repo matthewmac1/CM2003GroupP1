@@ -79,19 +79,19 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
     }
 
 h1 
-    { 
+    {
     font-size: 38px; 
     line-height: 1.2; 
     }
 
 h2 
-    { 
+    {
     font-size: 34px; 
     line-height: 1.2; 
     }
 
 h3 
-    { 
+    {
     font-size: 28px; 
     line-height: 1.2; 
     }
@@ -375,7 +375,8 @@ input.search-box
 
 .button, button, input[type='submit'], input[type='reset'], input[type='button']
     {
-    border: none;
+    border: 2px solid;
+    border-radius: 25px;
     background-color: #74bcf4;
     display: inline-block;
     text-decoration: none;
