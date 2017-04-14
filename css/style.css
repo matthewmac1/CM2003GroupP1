@@ -376,6 +376,7 @@ input.search-box
 .button, button, input[type='submit'], input[type='reset'], input[type='button']
     {
     border: none;
+    background-color: #74bcf4;
     display: inline-block;
     text-decoration: none;
     font-size: 14px;
