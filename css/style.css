@@ -386,11 +386,13 @@ input.search-box
     font-size: 14px;
     font-weight; 300;
     font-family: inherit;
+    color: #dee8f7;
     line-height: normal;
-    cursor: ponter;
+    cursor: pointer;
     outline: none;
     transition: .5s;
     text-transform: uppercase;
     text-align:left;
     margin: 0;
+    
     }
