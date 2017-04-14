@@ -131,11 +131,6 @@ h1, h2, h3
 p 
     {
     margin: 0;
-    position: absolute; 
-    margin-top: 5%;
-    margin-left: .btn.width/2;/*
-    margin-right: -50%;
-    */text-align:center;
     }
 
 pp
@@ -267,6 +262,9 @@ body
     background-color: #74bcf4;
     border-radius: 5px;
     border: 1px solid #4e647e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     }
 
 .btn_offset
