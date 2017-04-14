@@ -150,7 +150,6 @@ img
     {
     border-radius: 50%;   
     margin: 0;
-    vertical-align: 80px;
     }
 
 body
@@ -181,7 +180,9 @@ body
 	 
     left: 0px; 
 	 
-    top: 0px; 
+    top: 50%; 
+	    
+    transform: translateY(-50%);
 	 
     position: relative; 
 
@@ -199,9 +200,11 @@ body
     background-color: #4e647a;
     border: 1px solid #4e647e;
 	    
-    display: flex;
+    /*display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;*/
+	    
+    
     }
 
 #bkgrd_dk_b 
@@ -401,5 +404,4 @@ input.search-box
     text-transform: uppercase;
     text-align:left;
     margin: 20px;
-    vertical-align: 50px;
     }
