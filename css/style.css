@@ -130,7 +130,7 @@ h1, h2, h3
 /* ** Typography ** */
 p 
     {
-    margin: 20px 20px 0 20px;
+    margin: 22px 20px 0 20px;
     text-align:center;
     }
 
@@ -251,7 +251,6 @@ body
     margin: 10px;
     width: 150px;
     height: 65px;
-    text-align: center;
     background-color: #74bcf4;
     border-radius: 5px;
     border: 1px solid #4e647e;
