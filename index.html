@@ -24,6 +24,15 @@
           window.location = 'http://spotinfinity.azurewebsites.net/login.html';
         }
       });
+      $.ajax({
+        url: 'https://api.spotify.com/v1/audio-features/05KfyCEE6otdlT1pp2VIjP',
+        headers: {
+          'Authorization' : 'Bearer ' + localStorage.getItem('access_token')
+        },
+        success: function(response2) {
+          console.log(response2)
+        }
+      })
     });
   </script>
 
