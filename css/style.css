@@ -281,11 +281,11 @@ body
 .btn_sq
     {
     float: left;	 
-    margin: 10px;
+    margin: 0px;
     width: 150px;
     height: 150px;
     background-color: #74bcf4;
-    border-radius: 5px;
+    border-radius: 0px;
     border: 1px solid #4e647e;
     }
 
