@@ -1,6 +1,6 @@
 /* ** Reset ** */
 
-html, body, body1, div, span, applet, object, iframe,
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, a, abbr, acronym, address,
 big, cite, code, del, dfn, em, img, ins, kbd,
@@ -19,14 +19,11 @@ section, summary, time, mark, audio, video
   border: 0;
 }
 
-
-
 body
 {
   font: 14px 'Open Sans', sans-serif;
   color: #dee8f7;
   background-color: #2a333c;
-  min-width: 1336px;
 }
 
 header
@@ -173,13 +170,6 @@ table
 }
 
 /****LOGIN-PAGE CSS****/
-
-body1
-{
-  font: 14px 'Open Sans', sans-serif;
-  color: #dee8f7;
-  background-color: #2a333c;
-}
 
 #login-page{
   text-align: center;
