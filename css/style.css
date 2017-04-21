@@ -43,7 +43,7 @@ header #user-msg
 }
 header #user-img
 {
-  margin-left: 1em;
+  margin-left: 0.5em;
   height: 100%;
   float: left;
 }
