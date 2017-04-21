@@ -191,7 +191,7 @@ footer
     }
 
     #aboutUs, #getInTouch {
-        font-size: 50%;
+        font-size: 80%;
         width: 20%;
         height: 20%;
         margin-left: 1%;
@@ -217,6 +217,7 @@ footer
   width:auto;
   text-align: center;
   margin-top: 20vh;
+  min-height: 800px;
 }
 
 #logo{
