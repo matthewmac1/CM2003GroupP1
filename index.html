@@ -13,7 +13,7 @@
         success: function(response) {
           var userProfileTemplate = Handlebars.compile($('#user-profile-template').html());
           response.display_name = response.display_name.split(' ')[0];
-          $('#bkgrd_dk_a').html(userProfileTemplate(response))
+          $('header').html(userProfileTemplate(response))
           $('#logout-button').click(function(){
             localStorage.clear();
             window.location = 'http://spotinfinity.azurewebsites.net/login.html';
@@ -51,48 +51,188 @@
 
   <body>
     <header id="header">
-      <div id="bkgrd_dk">
-        <div id="bkgrd_dk_a"> <!-- User profile -->
-        </div> <!-- End of user profile -->
-
-        <div id="bkgrd_dk_b">
-          <H3>Search Presets</H3>
-
-          <div class="btn"><p>Rock</p></div>
-          <div class="btn_offset"><p>Pop</p></div>
-
-          <div class="btn"><p>RnB</p></div>
-          <div class="btn_offset"><p>Alternate</p></div>
-
-          <div class="btn"><p>Jazz</p></div>
-          <div class="btn_offset"><p>Classic</p></div>
-
-          <div class="btn"><p>Country</p></div>
-          <div class="btn_offset"><p>Dance</p></div>
-
-          <div class="btn"><p>Electronic</p></div>
-          <div class="btn_offset"><p>Indie</p></div>
-        </div>
-
-        <div id="bkgrd_dk_b">
-          <div class="btn"><p>Albums</p></div>
-          <div class="btn_offset"><p>Singles</p></div>
-
-          <div class="btn"><p>Artists</p></div>
-          <div class="btn_offset"><p>Songs</p></div>
-        </div>
-      </div>
     </header> <!-- End #header -->
-    
+
+    <div id="sidebar">
+      <div id="search-box">
+        <form>
+          <input type="text" name="search" placeholder="Search...">
+        </form>
+      </div>
+
+      <div id="preset-box">
+        <ul>
+          <li class="preset-btn">Most listened tracks</li>
+          <li class="preset-btn">Recent saved tracks</li>
+
+          <li class="preset-btn">Global top 20</li>
+          <li class="preset-btn">UK top 20</li>
+        </ul>
+      </div>
+
+      <div id="playlist-box">
+      </div>
+    </div>
+
+    <div id='content'>
+      <table>
+        <tr>
+          <th class="tbl-add"></th>
+          <th class="tbl-name">Name</th>
+          <th class="tbl-artist">Artist</th>
+          <th class="tbl-popularity">Popularity</th>
+        </tr>
+
+        <tr>
+          <td class="tbl-add">+</td>
+          <td class="tbl-name">song</td>
+          <td class="tbl-artist">singer</td>
+          <td class="tbl-popularity">very</td>
+        </tr>
+
+        <tr>
+          <td class="tbl-add">+</td>
+          <td class="tbl-name">song</td>
+          <td class="tbl-artist">singer</td>
+          <td class="tbl-popularity">very</td>
+        </tr>
+
+        <tr>
+          <td class="tbl-add">+</td>
+          <td class="tbl-name">song</td>
+          <td class="tbl-artist">singer</td>
+          <td class="tbl-popularity">very</td>
+        </tr>
+
+        <tr>
+          <td class="tbl-add">+</td>
+          <td class="tbl-name">song</td>
+          <td class="tbl-artist">singer</td>
+          <td class="tbl-popularity">very</td>
+        </tr>
+
+        <tr>
+          <td class="tbl-add">+</td>
+          <td class="tbl-name">song</td>
+          <td class="tbl-artist">singer</td>
+          <td class="tbl-popularity">very</td>
+        </tr>
+
+        <tr>
+          <td class="tbl-add">+</td>
+          <td class="tbl-name">song</td>
+          <td class="tbl-artist">singer</td>
+          <td class="tbl-popularity">very</td>
+        </tr>
+
+        <tr>
+          <td class="tbl-add">+</td>
+          <td class="tbl-name">song</td>
+          <td class="tbl-artist">singer</td>
+          <td class="tbl-popularity">very</td>
+        </tr>
+
+        <tr>
+          <td class="tbl-add">+</td>
+          <td class="tbl-name">song</td>
+          <td class="tbl-artist">singer</td>
+          <td class="tbl-popularity">very</td>
+        </tr>
+
+        <tr>
+          <td class="tbl-add">+</td>
+          <td class="tbl-name">song</td>
+          <td class="tbl-artist">singer</td>
+          <td class="tbl-popularity">very</td>
+        </tr>
+
+        <tr>
+          <td class="tbl-add">+</td>
+          <td class="tbl-name">song</td>
+          <td class="tbl-artist">singer</td>
+          <td class="tbl-popularity">very</td>
+        </tr>
+
+        <tr>
+          <td class="tbl-add">+</td>
+          <td class="tbl-name">song</td>
+          <td class="tbl-artist">singer</td>
+          <td class="tbl-popularity">very</td>
+        </tr>
+
+        <tr>
+          <td class="tbl-add">+</td>
+          <td class="tbl-name">song</td>
+          <td class="tbl-artist">singer</td>
+          <td class="tbl-popularity">very</td>
+        </tr>
+
+        <tr>
+          <td class="tbl-add">+</td>
+          <td class="tbl-name">song</td>
+          <td class="tbl-artist">singer</td>
+          <td class="tbl-popularity">very</td>
+        </tr>
+
+        <tr>
+          <td class="tbl-add">+</td>
+          <td class="tbl-name">song</td>
+          <td class="tbl-artist">singer</td>
+          <td class="tbl-popularity">very</td>
+        </tr>
+
+        <tr>
+          <td class="tbl-add">+</td>
+          <td class="tbl-name">song</td>
+          <td class="tbl-artist">singer</td>
+          <td class="tbl-popularity">very</td>
+        </tr>
+
+        <tr>
+          <td class="tbl-add">+</td>
+          <td class="tbl-name">song</td>
+          <td class="tbl-artist">singer</td>
+          <td class="tbl-popularity">very</td>
+        </tr>
+
+        <tr>
+          <td class="tbl-add">+</td>
+          <td class="tbl-name">song</td>
+          <td class="tbl-artist">singer</td>
+          <td class="tbl-popularity">very</td>
+        </tr>
+
+        <tr>
+          <td class="tbl-add">+</td>
+          <td class="tbl-name">song</td>
+          <td class="tbl-artist">singer</td>
+          <td class="tbl-popularity">very</td>
+        </tr>
+
+        <tr>
+          <td class="tbl-add">+</td>
+          <td class="tbl-name">song</td>
+          <td class="tbl-artist">singer</td>
+          <td class="tbl-popularity">very</td>
+        </tr>
+
+        <tr>
+          <td class="tbl-add">+</td>
+          <td class="tbl-name">song</td>
+          <td class="tbl-artist">singer</td>
+          <td class="tbl-popularity">very</td>
+        </tr>
+      </table>
+    </div>
+
     <footer id="footer">
-    </footer> <!-- End #header -->
+      <span id='user-msg'>asdasdasd</span>
+    </footer> <!-- End #footer -->
   </body>
 
   <script id='user-profile-template' type='text/x-handlebars-template'>
-    <h1>Hello, {{display_name}}</h1>
-    <img width='100' src='{{images.0.url}}' />
+    <img id='user-img' src='{{images.0.url}}' />
+    <span id='user-msg'>Hello, {{display_name}}</span>
     <button id='logout-button'>Log out</button>
-    <button id='plalist-create-button'>Create Playlist</button>
-    <button id='add-to-button'>Add to Playlist</button>
   </script>
 </html>
