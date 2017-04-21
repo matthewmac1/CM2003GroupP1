@@ -215,6 +215,7 @@ footer
 
 #login-page{
   width:auto;
+  overflow:hidden;
   text-align: center;
   margin-top: 20vh;
 }
