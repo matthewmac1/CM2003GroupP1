@@ -10,6 +10,6 @@ html, body {
     height: 100%;
     margin: 0 auto -4em; /*-4em represents the height of the footer */
  }
- .footer, .push {
+ #footer, .push {
     height: 4em;
  }
