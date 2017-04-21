@@ -25,6 +25,7 @@ body
   color: #dee8f7;
   background-color: #2a333c;
   min-height: 500px;
+  padding-bottom: 10px;
 }
 
 header
