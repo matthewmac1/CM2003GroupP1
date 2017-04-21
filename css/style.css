@@ -197,14 +197,13 @@ footer
 }
 
 #getInTouch{
-  text-align: center;
-  float: left;
+  float: center;
   margin-top: 20px;
   margin-left: 25%;
 }
 
 #aboutUs{
-  float: left;
+  float: center;
   margin-top: 20px;
   margin-left: 5%;
   margin-right: 5%;
