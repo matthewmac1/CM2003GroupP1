@@ -9,7 +9,9 @@
 
   <body>
     <h1 id="loading">Loading...</h1>
-    <button id="login-button" style="display: none;">Log in with Spotify</button>
+    <div id="login-page">
+      <button id="login-button" style="display: none;">Log in with Spotify</button>
+    </div>
   </body>
 
   <script>
@@ -43,7 +45,7 @@
           error: function() {
             localStorage.clear();
             $('#loading').hide();
-            $('#login-button').show();
+            $('#login-page').show();
           }
         });
       } else if(localStorage.getItem(stateKey) == getHashParams().state && getHashParams().state) {
@@ -51,7 +53,7 @@
         window.location = 'http://spotinfinity.azurewebsites.net/';
       } else {
         $('#loading').hide();
-        $('#login-button').show();
+        $('#login-page').show();
       }
     });
 
