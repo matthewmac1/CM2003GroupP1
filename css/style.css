@@ -212,3 +212,7 @@ footer
   text-decoration: none;
   cursor: pointer;
 }
+
+#login-page{
+  text-align: center;
+}
