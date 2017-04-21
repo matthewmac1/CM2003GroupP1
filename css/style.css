@@ -207,6 +207,13 @@ footer
   margin-right: 5%;
 }
 
+#socialMedia{
+  float: left;
+  margin-top: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 @media only screen and (max-width: 900px) {
    #Footer {
         width: 100%;
