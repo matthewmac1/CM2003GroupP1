@@ -214,12 +214,12 @@ footer
 }
 
 #login-page{
-  float: left;
   text-align: center;
   margin-top: 40vh;
 }
 
 #logo{
+  margin-top: 20vh;
   width: 10vh;
   height: 10vh;
 }
