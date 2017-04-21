@@ -188,7 +188,6 @@ table
 
 footer
 {
-  text-align: center;
   position: fixed;
   right: 0;
   bottom: 0;
@@ -198,6 +197,7 @@ footer
 }
 
 #getInTouch{
+  text-align: center;
   float: left;
   margin-top: 20px;
   margin-left: 25%;
