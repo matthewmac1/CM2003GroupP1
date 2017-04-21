@@ -172,6 +172,15 @@ table
   cursor: pointer;
 }
 
+/****LOGIN-PAGE CSS****/
+
+body1
+{
+  font: 14px 'Open Sans', sans-serif;
+  color: #dee8f7;
+  background-color: #2a333c;
+}
+
 #login-page{
   text-align: center;
   margin-top: 20vh;
