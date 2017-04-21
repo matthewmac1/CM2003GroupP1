@@ -181,6 +181,24 @@ footer
   margin-right: 5%;
 }
 
+@media only screen and (max-width: 700px) {
+   #Footer {
+        width: 100%;
+    }
+
+    #Footer.push {
+        bottom: 0;
+    }
+
+    #aboutUs, #getInTouch {
+        font-size: 50%;
+        width: 20%;
+        height: 20%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+}
+
 .button, button, input[type='submit'], input[type='reset'], input[type='button']
 {
   font-size: 1.1em;
