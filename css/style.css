@@ -93,7 +93,6 @@ input::placeholder
   background-color: #4e647a;
   border-radius: 10px;
   padding: 2.5%;
-  cursor: pointer;
 }
 
 #playlist-box
@@ -121,6 +120,7 @@ ul
   text-transform: uppercase;
   margin: 2.5%;
   padding: 0.5em 0 0.5em 0;
+  cursor: pointer;
 }
 
 #content
