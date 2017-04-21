@@ -173,11 +173,8 @@ table
 }
 
 #login-page{
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  
+  text-align: center;
+  margin-top: 20vh;
 }
 
 #logo{
