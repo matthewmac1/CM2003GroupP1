@@ -227,13 +227,13 @@ table img
 /****LOGIN-PAGE CSS****/
 
 #login-page{
-  text-align: center;
+  /*text-align: center;*/
   /*margin-top: 20vh;*/
 }
 
 #logo{
-  margin-top: 5vh;
-  margin-bottom: 35px;
+  /*margin-top: 5vh;
+  margin-bottom: 35px;*/
   width: 402.4px;
   height: 360.4px;
 }
