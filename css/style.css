@@ -26,19 +26,21 @@ body
   background-color: #2a333c;
   min-height: 500px;
   padding-bottom: 10px;
+  height: 100vh;
+  overflow: hidden;
 }
 
 header
 {
-  height: 3.4em;
+  height: 7vh;
   background-color: #4e647a;
 }
 
 header #user-msg
 {
-  margin: 1em;
+  margin: 2vh;
+  font-size: 3vmin;
   display: inline-block;
-  font-size: 1.2em;
 }
 header #user-img
 {
@@ -50,6 +52,8 @@ header #user-img
 
 header #logout-button
 {
+  margin: 1.5vh;
+  font-size: 2vmin;
   float: right;
 }
 
@@ -57,50 +61,65 @@ header #logout-button
 {
   display: inline-block;
   float: left;
-  width: 400px;
+  width: 30%;
   border-right: 1px solid #4e647e;
 }
 
 #search-box
 {
-  margin: 2.5%;
+  margin: 2%;
   background-color: #4e647a;
   border-radius: 10px;
   padding: 2.5%;
+  height: 7vh;
 }
 
 input[type=text] {
-    width: 78%;
-    border: 2px solid #2a333c;
+    width: 83%;
+    border: 1px solid #2a333c;
     border-radius: 5px;
-    font-size: 1.3em;
+    font-size: 3vmin;
     color: #dee8f7;
     background-color: inherit;
     background-image: url('searchicon.png');
-    background-position: 10px 10px;
+    background-position: 2% 45%;
     background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
+    padding: 3% 7% 3% 10%;
 }
 input::placeholder
 {
   color: #dee8f7;
 }
 
-#preset-box
-{
-  margin: 2.5%;
-  background-color: #4e647a;
-  border-radius: 10px;
-  padding: 2.5%;
-}
-
 #playlist-box
 {
-  height: 20vh;
-  margin: 2.5%;
+  margin: 2%;
   background-color: #4e647a;
   border-radius: 10px;
   padding: 2.5%;
+  overflow-y: scroll;
+  height: 59vh;
+}
+
+#playlist-box table
+{
+  width: 100%;
+}
+
+#playlist-box tr
+{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 5px;
+}
+
+#playlist-box th
+{
+  width: 100%;
+}
+
+#playlist-box td
+{
+  width: 1%;
 }
 
 ul
@@ -108,33 +127,62 @@ ul
   list-style: none;
   display: inline-block;
 }
+
+#preset-box
+{
+  margin: 2%;
+  background-color: #4e647a;
+  border-radius: 10px;
+  padding: 2%;
+  height: 16vh;
+}
+
 .preset-btn
 {
   float: left;
-  width: 45%;
+  width: 47%;
   background-color: #74bcf4;
   border-radius: 5px;
-  font-size: 1.3em;
+  font-size: 2vmin;
   text-align: center;
   text-transform: uppercase;
-  margin: 2.5%;
-  padding: 0.5em 0 0.5em 0;
+  margin: 2.5% 1.5% 2.5% 1.5%;
+  padding: 1.6vh 0 1.6vh 0;
   cursor: pointer;
 }
 
 #content
 {
   display: inline-block;
-  margin: 10px;
+  margin: 0.5%;
+  padding: 0.7%;
   background-color: #4e647a;
   border-radius: 10px;
+  height: 91vh;
+  width: 67.5%;
+}
 
+#content img
+{
+  width: 4.48vh;
+  height: 4.48vh;
 }
 
 table
 {
-  width: 900px;
   font-size: 1.2em;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td
+{
+  text-align: center;
+}
+
+table img
+{
+  display: block;
 }
 
 .tbl-add
@@ -144,17 +192,22 @@ table
 
 .tbl-name
 {
-  width: 30%;
+  width: 40%;
 }
 
 .tbl-artist
 {
-  width: 40%;
+  width: 20%;
 }
 
 .tbl-popularity
 {
   width: 20%;
+}
+
+.black-row
+{
+  background-color: rgba(0, 0, 0, 0.5);;
 }
 
 .button, button, input[type='submit'], input[type='reset'], input[type='button']
