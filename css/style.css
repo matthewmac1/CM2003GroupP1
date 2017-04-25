@@ -243,8 +243,7 @@ table img
 /****LOGIN-PAGE CSS****/
 
 #login-page{
-  display: flex;
-  height: 100px;
+  margin:auto;
 }
 
 #logo{
@@ -252,7 +251,6 @@ table img
   margin-bottom: 35px;
   width: 402.4px;
   height: 360.4px;
-  margin: auto;
 }
 
 footer
