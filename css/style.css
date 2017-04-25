@@ -284,9 +284,10 @@ footer
 
 @media only screen and (max-width: 900px) {
   
-   #logo{
-        width:10%;
-        padding: 20px;
+   #logo, #login-button{
+        width:50%;
+        height:50%;
+        padding: 20vh;
    }
    #Footer {
         width: 100%;
