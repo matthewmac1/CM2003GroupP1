@@ -88,6 +88,8 @@
             infinityClick(tracks[$(this).attr('id')].preview_url);
             for(var j = 0; j < tracks.length; j++){
               $('#' + j).html('Play');
+              window.alert(audio.src);
+
             }
             $(this).html('Pause');
           } else {
@@ -457,7 +459,6 @@
   
   <script>
     window.alert("hi");
-    window.alert(audio.src);
   </script>
 
   <script id='user-profile-template' type='text/x-handlebars-template'>
