@@ -224,6 +224,7 @@ table img
 
 .black-row
 {
+  -webkit-transition: background-color 0.25s ease-out;
   background-color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
@@ -234,6 +235,7 @@ table img
 
 .white-row
 {
+  -webkit-transition: background-color 0.25s ease-out;
   cursor: pointer;
 }
   .white-row:hover{
