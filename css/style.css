@@ -316,6 +316,10 @@ footer
         height: 20%;
         margin-left: 5%;
     }
+  
+    #sidebar{
+      display: none;
+    }
 }
 
 @media only screen and (max-height: 700px) {
