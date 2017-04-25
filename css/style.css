@@ -33,19 +33,6 @@ body
   scrollbar-track-color: $background-color;
 }
 
-::-webkit-scrollbar {
-     width:  $size;
-     height: $size;
- }
-
- ::-webkit-scrollbar-thumb {
-     background: $foreground-color;
- }
-
- ::-webkit-scrollbar-track {
-     background: $background-color;
- }
-
 header
 {
   height: 7vh;
@@ -116,6 +103,19 @@ input::placeholder
   overflow-y: scroll;
   height: 59vh;
 }
+
+#playlist-box::-webkit-scrollbar {
+     width:  $size;
+     height: $size;
+ }
+
+ #playlist-box::-webkit-scrollbar-thumb {
+     background: $foreground-color;
+ }
+
+ #playlist-box::-webkit-scrollbar-track {
+     background: $background-color;
+ }
 
 #playlist-box table
 {
