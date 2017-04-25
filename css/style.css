@@ -28,7 +28,23 @@ body
   padding-bottom: 10px;
   height: 100vh;
   overflow: hidden;
+
+  scrollbar-face-color: $foreground-color;
+  scrollbar-track-color: $background-color;
 }
+
+::-webkit-scrollbar {
+     width:  $size;
+     height: $size;
+ }
+
+ ::-webkit-scrollbar-thumb {
+     background: $foreground-color;
+ }
+
+ ::-webkit-scrollbar-track {
+     background: $background-color;
+ }
 
 header
 {
