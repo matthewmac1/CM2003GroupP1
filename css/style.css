@@ -49,7 +49,11 @@ header #user-img
   float: left;
   border-radius: 50%;
 }
-
+header #preset-btn{
+  float: center;
+  margin: 1.5vh;
+  font-size: 2vmin;
+}
 header #logout-button
 {
   margin: 1.5vh;
