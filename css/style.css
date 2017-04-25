@@ -105,16 +105,16 @@ input::placeholder
 }
 
 #playlist-box::-webkit-scrollbar {
-  border-radius: 100%;
+  border-radius: 10%;
 }
 
 #playlist-box::-webkit-scrollbar-thumb {
-  border-radius: 100%;
+  border-radius: 10%;
   background: rgba(255, 255, 255, 0.1);
 }
 
 #playlist-box::-webkit-scrollbar-track {
-  border-radius: 100%;
+  border-radius: 10%;
   background: #4e647a;
 }
 
