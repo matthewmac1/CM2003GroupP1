@@ -298,3 +298,7 @@ footer
         margin-left: 5%;
     }
 }
+
+if(windowsize < 480){
+  width:50%;
+}
