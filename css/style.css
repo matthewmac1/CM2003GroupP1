@@ -283,3 +283,13 @@ footer
         margin-left: 5%;
     }
 }
+
+@media only screen and (max-width: 900px) {
+   #login-page {
+        width: 100%;
+    }
+
+    #login-button, #logo {
+      padding-top="0";
+    }
+}
