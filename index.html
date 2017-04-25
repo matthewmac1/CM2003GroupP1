@@ -85,7 +85,7 @@
         });
         $('#' + i).click(function(){
           if ($(this).html() == 'Play') {
-            window.alert(audio.src);
+            window.alert('https://api.spotify.com/v1/tracks/{id}');
             infinityClick(tracks[$(this).attr('id')].preview_url);
             for(var j = 0; j < tracks.length; j++){
               $('#' + j).html('Play');
