@@ -283,6 +283,11 @@ footer
 }
 
 @media only screen and (max-width: 900px) {
+  
+   #logo{
+        width:10%;
+        padding: 20px;
+   }
    #Footer {
         width: 100%;
     }
@@ -297,8 +302,4 @@ footer
         height: 20%;
         margin-left: 5%;
     }
-}
-
-if(windowsize < 480){
-  width:50%;
 }
