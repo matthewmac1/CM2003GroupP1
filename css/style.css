@@ -28,6 +28,9 @@ body
   padding-bottom: 10px;
   height: 100vh;
   overflow: hidden;
+
+  scrollbar-face-color: $foreground-color;
+  scrollbar-track-color: $background-color;
 }
 
 header
@@ -99,24 +102,20 @@ input::placeholder
   padding: 2.5%;
   overflow-y: scroll;
   height: 59vh;
-
-  scrollbar-face-color: rgba(255, 255, 255, 0.1);
-  scrollbar-track-color: #4e647a;
 }
 
 #playlist-box::-webkit-scrollbar {
-  border-radius: 10%;
-}
+     width:  $size;
+     height: $size;
+ }
 
-#playlist-box::-webkit-scrollbar-thumb {
-  border-radius: 10%;
-  background: rgba(255, 255, 255, 0.1);
-}
+ #playlist-box::-webkit-scrollbar-thumb {
+     background: $foreground-color;
+ }
 
-#playlist-box::-webkit-scrollbar-track {
-  border-radius: 10%;
-  background: #4e647a;
-}
+ #playlist-box::-webkit-scrollbar-track {
+     background: $background-color;
+ }
 
 #playlist-box table
 {
@@ -244,7 +243,7 @@ table img
 /****LOGIN-PAGE CSS****/
 
 #login-page{
-  margin:auto;
+  padding: 20px;
 }
 
 #logo{
@@ -284,11 +283,11 @@ footer
 }
 
 @media only screen and (max-width: 900px) {
-
+  
    #logo{
-        width:50%;
-        height:50%;
-        padding: 20vh;
+        width: 50%;
+        height: 50%;
+        float: none;
    }
    #Footer {
         width: 100%;
