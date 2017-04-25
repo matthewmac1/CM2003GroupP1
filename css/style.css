@@ -321,8 +321,8 @@ footer
 @media only screen and (max-height: 400px) {
   
   #logo{
-        width:50%;
-        height:50%;
+        width: 100.6px;
+        height: 90.1px;
    }
    #Footer {
         width: 100%;
