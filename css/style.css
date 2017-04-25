@@ -318,18 +318,20 @@ footer
     }
 }
 
-@media only screen and (max-height: 400px) {
+@media only screen and (max-height: 500px) {
   
   #logo{
-        width: 100.6px;
-        height: 90.1px;
+        width: 10%;
+        height:10%; 
    }
+  
    #Footer {
         width: 100%;
     }
 
     #Footer.push {
         bottom: 0;
+        height: 10%;
     }
 
     #aboutUs, #getInTouch, #socialMedia {
