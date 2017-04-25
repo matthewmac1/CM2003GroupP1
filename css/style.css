@@ -318,7 +318,7 @@ footer
     }
 }
 
-@media only screen and (max-height: 500px) {
+@media only screen and (max-height: 700px) {
   
   #logo{
         width: 10%;
