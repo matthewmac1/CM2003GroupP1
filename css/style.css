@@ -206,6 +206,14 @@ table img
 {
   width: 10%;
 }
+  .tbl-add:hover
+  {
+    text-decoration: underline;
+  }
+  .tbl-play:hover
+  {
+    text-decoration: underline;
+  }
 
 .tbl-name
 {
@@ -318,19 +326,19 @@ footer
         height: 20%;
         margin-left: 5%;
     }
-  
+
     #sidebar{
       display: none;
     }
 }
 
 @media all and (max-height: 700px) {
-  
+
   #logo{
         width: 10%;
-        height:10%; 
+        height:10%;
    }
-  
+
    #Footer {
         width: 100%;
     }
