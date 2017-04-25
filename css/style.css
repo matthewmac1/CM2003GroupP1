@@ -306,7 +306,7 @@ footer
   width: 33%;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1077px) {
 
    #logo{
         width:50%;
