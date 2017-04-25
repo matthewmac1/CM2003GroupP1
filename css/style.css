@@ -98,7 +98,7 @@ input::placeholder
   border-radius: 10px;
   padding: 2.5%;
   overflow-y: scroll;
-  height: 59vh;
+  height: 60vh;
 
   scrollbar-face-color: rgba(255, 255, 255, 0.1);
   scrollbar-track-color: #4e647a;
