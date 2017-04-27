@@ -6,6 +6,7 @@
   <script>
 
     var infinityPlaylist = '';
+    var currentSong = "";
 
     var audio = new Audio();
     audio.volume = 0.4;
@@ -86,7 +87,8 @@
         $('#' + i).click(function(){
           if ($(this).html() == 'Play') {
             /**/
-                console.log(tracks[$(this).attr('id')].name);
+            currentSong = (tracks[$(this).attr('id')].name);
+               window.alert(tracks[$(this).attr('id')].name);
 
             infinityClick(tracks[$(this).attr('id')].preview_url);
             for(var j = 0; j < tracks.length; j++){
@@ -460,7 +462,7 @@
     <img id='user-img' src='{{images.0.url}}' />
     <span id='user-msg'>Hello, {{display_name}}</span>
     <button id="preset-btn">Play</button>
-    <span id='song'>You're listening to {{audio.src}}</span>
+    <span id='song'>You're listening to {{currentSong}}</span>
     <button id='logout-button'>Log out</button>
   </script>
 </html>
