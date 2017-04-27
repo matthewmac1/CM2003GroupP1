@@ -240,7 +240,8 @@
           },
           success: function(response) {
             var i = 0;
-            while(response.items[i].name != "Discover Weekly") { i++; }
+            while(
+              .items[i].name != "Discover Weekly") { i++; }
             $.ajax({
               url: response.items[i].href,
               headers: {
@@ -464,8 +465,7 @@
     <img id='user-img' src='{{images.0.url}}' />
     <span id='user-msg'>Hello, {{display_name}}</span>
     <button id="preset-btn">Play</button>
-  
-    <span id='song'>You're listening to {{currentSong}}</span>
+    <p>You're listening to {{currentSong}}<p>
     <button id='logout-button'>Log out</button>
   </script>
 </html>
