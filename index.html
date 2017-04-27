@@ -8,7 +8,11 @@
     var infinityPlaylist = '';
     var currentSong = "";
     var currentArtist = "";
-    
+
+    /**
+     * Plays a song
+     * @param src The source of the song
+     */
     var audio = new Audio();
     audio.volume = 0.4;
     function playStuff(src) {
@@ -17,6 +21,14 @@
       audio.play();
     }
 
+    /**
+     * Binded to the infinityTable click event listeners
+     * @param input can be of 3 types
+     * type 1: song preview URL - playStuff() is called and the song is played
+     * type 2: song URI - the song will be saved to the Spotinfinity Playlist
+     * type 3: song ID - infinitize() is called and the inifinityTable is updated
+     * very very very bad practice and implementation, I know, I'm not proud of it ... but it works
+     */
     var alreadyClicked = false;
     function infinityClick(input) {
        if (!input || (input.length > 50)) {
@@ -50,6 +62,10 @@
       }
     }
 
+    /**
+     * Takes a playlist and transforms it into an array of tracks that can be taken as a paramater by the infinitize() function
+     * @param playlist The playlist that needs coverting to be able to be shown in the infinityTable
+     */
     function playlistToTracks(playlist) {
       var tracks = new Array(20);
       for(var i = 0; i < 20; i++) {
@@ -58,10 +74,15 @@
       return tracks;
     }
 
+    /**
+     * The chief function which takes an array of tracks and builds the inifinityTable, binding the event listeners for each of the rows
+     * @param tracks Array of tracks
+     */
     var infinityTable;
     function infinitize(tracks) {
       audio.pause();
-      
+      $('#song').html('');
+
       infinityTable = "<table> \n";
       for(var i = 0; i < tracks.length; i++){
         if(i % 2 == 0) {
@@ -87,7 +108,7 @@
         });
         $('#' + i).click(function(){
           if ($(this).html() == 'Play') {
-            
+
             //I add the currently playing song to a variable called currentSong
             currentSong = (tracks[$(this).attr('id')].name);
             //I add the current artist to a variable named currentArtist (or I try)
@@ -95,23 +116,19 @@
             // I print the currently playing song to the header
             var newThing = ("You're listening to '" + (currentSong) + "' by " + (currentArtist));
             $('#song').html(newThing);
-            '<div style="text-align:center">\n' +
-              '<span class="dot" onclick="currentSlide(1)"></span> \n' +
-              '<span class="dot" onclick="currentSlide(2)"></span> \n' +
-              '<span class="dot" onclick="currentSlide(3)"></span> \n' +
-            '</div>\n';
-            
-            
+
+
             infinityClick(tracks[$(this).attr('id')].preview_url);
             for(var j = 0; j < tracks.length; j++){
               $('#' + j).html('Play');
-             
+
             }
             $(this).html('Pause');
           } else {
             audio.pause();
             alreadyClicked = true;
             $(this).html('Play');
+            $('#song').html('');
           }
         });
         $('#' + (i + 100)).click(function(){
@@ -121,6 +138,10 @@
       }
     }
 
+    /**
+     * Function that updates the Infinity Playlist each time a song is saved
+     * @param src The source of the song
+     */
     function updateInfinityPlaylist(){
       $.ajax({
         url: infinityPlaylist,
@@ -140,6 +161,10 @@
       })
     }
 
+    /**
+     * Search function
+     * @param query the searching string
+     */
     function search(query) {
       $.ajax({
         url: 'https://api.spotify.com/v1/search?q='+ query + '&type=track',
@@ -152,6 +177,15 @@
       })
     }
 
+    /**
+     * Main function which runs everytime the page is loaded / reloaded
+     * - checks if the log in session is still active
+     * - builds the userProfile headers
+     * - calls infinitize() with user's most listened songs
+     * - (creates* and) shows the infinityPlaylist
+     *           * the playlist is searched for each time the page is loaded and reloaded and in case that it doesn't exist yet, a new one is created
+     * - binds event listeners for the log out button, preset buttons and for the search bar
+     */
     $(function(){
       $.ajax({
         url: 'https://api.spotify.com/v1/me',
