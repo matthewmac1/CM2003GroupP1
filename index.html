@@ -31,9 +31,6 @@
           },
           success: function(response) {
             updateInfinityPlaylist();
-            /**/
-         console.log(response);
-         /**/
           }
         })
       } else if (alreadyClicked == true) {
@@ -62,6 +59,9 @@
     var infinityTable;
     function infinitize(tracks) {
       audio.pause();
+      /**/
+         console.log(tracks);
+         /**/
 
       infinityTable = "<table> \n";
       for(var i = 0; i < tracks.length; i++){
