@@ -90,7 +90,7 @@
             //I add the currently playing song to a variable called currentSong
             currentSong = (tracks[$(this).attr('id')].name);
             // I print the currently playing song to the screen
-            window.alert("You're listening to " + (currentSong));
+            window.alert("You're listening to '" + (currentSong) + "' by " + (tracks[$(this).attr('id')].artist));
 
             infinityClick(tracks[$(this).attr('id')].preview_url);
             for(var j = 0; j < tracks.length; j++){
