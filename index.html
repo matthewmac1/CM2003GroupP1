@@ -7,7 +7,8 @@
 
     var infinityPlaylist = '';
     var currentSong = "";
-
+    var currentArtist = "";
+    
     var audio = new Audio();
     audio.volume = 0.4;
     function playStuff(src) {
@@ -89,6 +90,7 @@
             
             //I add the currently playing song to a variable called currentSong
             currentSong = (tracks[$(this).attr('id')].name);
+            currentArtist = (tracks[$(this).attr('id')].artist)
             // I print the currently playing song to the screen
             window.alert("You're listening to '" + (currentSong) + "' by " + (tracks[$(this).attr('id')].artist));
 
