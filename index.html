@@ -463,8 +463,8 @@
     <span id='user-msg'>Hello, {{display_name}}</span>
     <button id="preset-btn">Play</button>
   </script>
-  <script>
-    <span id='song'>"You're listening to" + document.getElementById('currentSong').innerHTML = currentSong</span>
+  <script id='user-profile-template' type='text/x-handlebars-template'>
+    <span id='song'>"You're listening to" + 'document.getElementById('currentSong').innerHTML = currentSong'</span>
     <button id='logout-button'>Log out</button>
   </script>
 </html>
