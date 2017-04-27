@@ -94,7 +94,7 @@
             // I print the currently playing song to the screen
             window.alert("You're listening to '" + (currentSong) + "' by " + (currentArtist));
             var newThing = ("You're listening to '" + (currentSong) + "' by " + (currentArtist));
-            $('#song').append(newThing);
+            $('#song').html(newThing);
             infinityClick(tracks[$(this).attr('id')].preview_url);
             for(var j = 0; j < tracks.length; j++){
               $('#' + j).html('Play');
