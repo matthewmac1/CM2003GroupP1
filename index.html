@@ -59,10 +59,7 @@
     var infinityTable;
     function infinitize(tracks) {
       audio.pause();
-      /**/
-         console.log(tracks);
-         /**/
-
+      
       infinityTable = "<table> \n";
       for(var i = 0; i < tracks.length; i++){
         if(i % 2 == 0) {
@@ -93,6 +90,9 @@
             infinityClick(tracks[$(this).attr('id')].preview_url);
             for(var j = 0; j < tracks.length; j++){
               $('#' + j).html('Play');
+              /**/
+                console.log(tracks);
+              /**/
             }
             $(this).html('Pause');
           } else {
