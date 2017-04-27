@@ -20,9 +20,6 @@
        if (!input || (input.length > 50)) {
         alreadyClicked = true;
         playStuff(input);
-         /**/
-         console.log(input);
-         /**/
       } else if (input.length > 30) {
         alreadyClicked = true;
         $.ajax({
@@ -34,6 +31,9 @@
           },
           success: function(response) {
             updateInfinityPlaylist();
+            /**/
+         console.log(input);
+         /**/
           }
         })
       } else if (alreadyClicked == true) {
