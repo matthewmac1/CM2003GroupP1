@@ -85,6 +85,9 @@
         });
         $('#' + i).click(function(){
           if ($(this).html() == 'Play') {
+            /**/
+                console.log(tracks[$(this).attr('id')].name);
+
             infinityClick(tracks[$(this).attr('id')].preview_url);
             for(var j = 0; j < tracks.length; j++){
               $('#' + j).html('Play');
