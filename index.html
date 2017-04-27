@@ -86,7 +86,7 @@
         $('#' + i).click(function(){
           if ($(this).html() == 'Play') {
             /**/
-                console.log(tracks[$(this).attr('name')]);
+                console.log(curl -X GET "https://api.spotify.com/v1/tracks/{id}");
               /**/
             infinityClick(tracks[$(this).attr('id')].preview_url);
             for(var j = 0; j < tracks.length; j++){
