@@ -90,7 +90,8 @@
             
             //I add the currently playing song to a variable called currentSong
             currentSong = (tracks[$(this).attr('id')].name);
-            currentArtist = (tracks[$(this).attr('id')].artist)
+            console.log(tracks[$(this).attr('id')].artist);
+            currentArtist = (tracks[$(this).attr('id')].artist);
             // I print the currently playing song to the screen
             window.alert("You're listening to '" + (currentSong) + "' by " + (tracks[$(this).attr('id')].artist));
 
