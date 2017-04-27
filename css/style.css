@@ -49,10 +49,11 @@ header #user-img
   float: left;
   border-radius: 50%;
 }
-header #preset-btn{
-  float: center;
-  margin: 1.5vh;
-  font-size: 2vmin;
+header #song
+{
+  margin: 2vh;
+  font-size: 3vmin;
+  display: inline-block;
 }
 header #logout-button
 {
