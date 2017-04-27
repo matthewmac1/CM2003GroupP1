@@ -88,7 +88,7 @@
           if ($(this).html() == 'Play') {
             /**/
             currentSong = (tracks[$(this).attr('id')].name);
-               window.alert(tracks[$(this).attr('id')].name);
+               document.write(tracks[$(this).attr('id')].name);
 
             infinityClick(tracks[$(this).attr('id')].preview_url);
             for(var j = 0; j < tracks.length; j++){
