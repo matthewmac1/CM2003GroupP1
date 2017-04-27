@@ -91,6 +91,7 @@
             currentSong = (tracks[$(this).attr('id')].name);
             // I print the currently playing song to the screen
             window.alert(currentSong);
+            "You're listening to {{currentSong}}"
 
             infinityClick(tracks[$(this).attr('id')].preview_url);
             for(var j = 0; j < tracks.length; j++){
@@ -465,7 +466,7 @@
     <img id='user-img' src='{{images.0.url}}' />
     <span id='user-msg'>Hello, {{display_name}}</span>
     <button id="preset-btn">Play</button>
-    <p>You're listening to {{currentSong}}</p>
+    <span id='song'>You're listening to {{currentSong}}</span>
     <button id='logout-button'>Log out</button>
   </script>
 </html>
