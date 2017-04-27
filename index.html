@@ -91,6 +91,7 @@
             //I add the currently playing song to a variable called currentSong
             currentSong = (tracks[$(this).attr('id')].name);
             //I add the current artist to a variable named currentArtist (or I try)
+            currentArtist = (tracks[$(this).attr('id')].name);
             console.log(tracks[$(this).attr('id')].artists);
             window.alert(tracks[$(this).attr('id')].artists);
             currentArtist = (tracks[$(this).attr('id')].artists);
