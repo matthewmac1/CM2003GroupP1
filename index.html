@@ -87,7 +87,7 @@
         $('#' + i).click(function(){
           if ($(this).html() == 'Play') {
             
-            //I add the currently playing song to a variable called currentSong (maybe)
+            //I add the currently playing song to a variable called currentSong
             currentSong = (tracks[$(this).attr('id')].name);
             // I print the currently playing song to the screen
             window.alert(currentSong);
@@ -464,9 +464,8 @@
     <img id='user-img' src='{{images.0.url}}' />
     <span id='user-msg'>Hello, {{display_name}}</span>
     <button id="preset-btn">Play</button>
-  </script>
+  
   <!--I do not work-->
-  <script id='user-profile-template' type='text/x-handlebars-template'>
     <span id='song'>You're listening to + document.getElementById('currentSong').innerHTML = currentSong</span>
     <button id='logout-button'>Log out</button>
   </script>
