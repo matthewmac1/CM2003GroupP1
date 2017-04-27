@@ -91,7 +91,7 @@
             //I add the currently playing song to a variable called currentSong
             currentSong = (tracks[$(this).attr('id')].name);
             //I add the current artist to a variable named currentArtist (or I try)
-            currentArtist = (tracks[$(this).attr('id')].artists[$(this).attr(name)].name;
+            currentArtist = (tracks[$(this).attr('id')].artists.map(function(artist) { return artist.name }).join(', ');
             // I print the currently playing song to the header
             var newThing = ("You're listening to '" + (currentSong) + "' by " + (currentArtist));
             $('#song').html(newThing);
