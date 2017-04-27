@@ -93,7 +93,7 @@
             currentArtist = (tracks[$(this).attr('id')].artists.name);
             // I print the currently playing song to the screen
             window.alert("You're listening to '" + (currentSong) + "' by " + (currentArtist));
-
+            $("#song").append(currentSong);
             infinityClick(tracks[$(this).attr('id')].preview_url);
             for(var j = 0; j < tracks.length; j++){
               $('#' + j).html('Play');
@@ -466,6 +466,7 @@
   <script id='user-profile-template' type='text/x-handlebars-template'>
     <img id='user-img' src='{{images.0.url}}' />
     <span id='user-msg'>Hello, {{display_name}}</span>
+    <span id='song></span>
     <button id="preset-btn">Play</button>
     <button id='logout-button'>Log out</button>
   </script>
