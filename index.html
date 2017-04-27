@@ -241,7 +241,7 @@
           success: function(response) {
             var i = 0;
             while(
-              .items[i].name != "Discover Weekly") { i++; }
+              items[i].name != "Discover Weekly") { i++; }
             $.ajax({
               url: response.items[i].href,
               headers: {
