@@ -85,16 +85,14 @@
         });
         $('#' + i).click(function(){
           if ($(this).html() == 'Play') {
-            /*This might work with a little bit of fiddling
-            window.alert('https://api.spotify.com/v1/tracks/{id}');*/
+            /**/
+                console.log(tracks[$(this).attr('name')]);
+              /**/
             infinityClick(tracks[$(this).attr('id')].preview_url);
             for(var j = 0; j < tracks.length; j++){
               $('#' + j).html('Play');
              
             }
-             /**/
-                console.log(tracks[$(this).attr('name')]);
-              /**/
             $(this).html('Pause');
           } else {
             audio.pause();
